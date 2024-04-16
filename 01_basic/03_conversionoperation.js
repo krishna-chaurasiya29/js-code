@@ -20,3 +20,18 @@ let booleanIsLoggedIn=Boolean(isLoggedIn)
 console.log(booleanIsLoggedIn);
 // ""=> false
 // "krishna"=> true
+
+//***************operations**************** */
+let value =3;
+let negValue =-3;
+console.log(negValue);//negative value
+
+str1="krishna";
+str2="chaurasiya";
+str3 = str1 +str2;
+console.log(str3);
+
+console.log("1"+2);//12
+console.log(1 + "2");//12
+console.log("1"+2+2);//122
+console.log(1+2+"2");//32 here first addition is done and then summation
