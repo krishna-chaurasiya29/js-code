@@ -18,22 +18,36 @@ const JsUser ={
     isLoggedIn:false,
     lastLoginDays:["monday","Tuesday"],
 }
-console.log(JsUser.email);//Ist Method
-console.log(JsUser["email"]);//IInd Method
+// console.log(JsUser.email);//Ist Method
+// console.log(JsUser["email"]);//IInd Method
 //There are two methods of accessing the objects
 //In second method we have to use brackets and then we have to use "" this because objects treats all this as string
 
-console.log(typeof mySym1);
-console.log(typeof mySum2);
-
+// console.log(typeof mySym1);
+// console.log(typeof mySum2);
+// console.log(JsUser[mySum2])
 //In myKey1 many times declaring the symbol in objects does not convert in to symbol it remains in string only and many tiimes it 
 //converts into object
 
 //to change the object
 
 JsUser.email = "krishnachaurasiya@yahoo.com";
-console.log(JsUser.email)//change email will be printed
-Object.freeze(JsUser);//this will freeze the object hece after this object cannot be changed
+// console.log(JsUser.email)//change email will be printed
+// Object.freeze(JsUser);//this will freeze the object hece after this object cannot be changed
 
 JsUser.email = "sonuchaurasiya@yahoo.com";//it reamins unchanged
-console.log(JsUser.email)
+// console.log(JsUser.email)
+
+
+//function declaration
+
+JsUser.greetings = function(){
+    console.log("hello js user");
+}
+// JsUser.greetings = function
+console.log(JsUser.greetings());
+
+JsUser.greetingsTwo =function(){
+    console.log(`hello js user  ${this.name}`);
+}
+console.log(JsUser.greetingsTwo());
