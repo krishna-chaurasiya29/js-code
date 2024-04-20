@@ -22,6 +22,7 @@ function addOne(num) {
 }
 //heree it will not show any error because we are just decalring the function
 addTwo(4)//here it will show error as its not only declaring the error but it is also storing in some varibale
+//two save from error we have to write it down of the fuction
 const addTwo =function(num){
     return num+2;
 }
