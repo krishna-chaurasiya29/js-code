@@ -21,4 +21,19 @@ else{
 // false ,0,-0,0n,BigInt,undefined,NaN,"" this are all falsy values
 
 //Truthy Values
+
 // "0", 'false' , " ",[], {},function(){}
+
+// if(Object.keys(emptyObj).length===0){
+// console.log("object is empty");
+// }
+
+//NUllish coalesing Operator (??) : null undefined
+
+let val1=5??10  //5 will be assigned
+// val1=null??10; //10 will be assigned
+// val1 = undefined ?? 15  //15 will be assigned
+console.log(val1);
+//the value which gets first is returned
+// it is used when there is call from database and comes null so instead of 
+//if we have to print another value we use this
