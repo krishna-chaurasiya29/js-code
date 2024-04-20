@@ -1,0 +1,24 @@
+//we will get to know about which all synatax are true and what are false
+
+const userEmail1 =[]//get 
+const userEmail2=""//didntget
+const userEmail3="hello@gnail.com"//get
+
+
+if(userEmail3)
+{
+    console.log("got user email");
+}
+else{
+    console.log("dint get user email");
+}
+
+//here we comes to know about some truthy values and falsy vlaues
+//which are predefined by the js
+
+
+//falsy values are
+// false ,0,-0,0n,BigInt,undefined,NaN,"" this are all falsy values
+
+//Truthy Values
+// "0", 'false' , " ",[], {},function(){}
