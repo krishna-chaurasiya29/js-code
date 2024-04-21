@@ -11,3 +11,11 @@ myNumbers.forEach( (num)=> {
     }
 })
 console.log(newnum);
+
+//Use of operatores in chain
+
+const newNumbers = myNumbers
+                    .map((num) => num*10)
+                    .map( (num) => num+1)
+                    .filter( (num) => num>=40)
+console.log(newNumbers);
